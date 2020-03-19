@@ -1,0 +1,36 @@
+# Berkeley PLA format generated using
+#
+# CUPL(WM)        5.0a Serial# 60008009
+# Device          g16v8s  Library DLIB-h-40-9
+# Created         Tue Mar 17 09:17:19 2020
+# Name            SnapShot
+# Partno          01
+# Revision        01
+# Date            11/13/2019
+# Designer        None
+# Company         None
+# Assembly        None
+# Location        None
+#
+# Inputs  CLKa CLKb CLRa CLRb 
+#         Delay Exrom FreezeKey GND 
+#         Game IOe Phi2 RW 
+#         RamEn RamWE Reset RomEn 
+#         RomH RomL RomOE VCC 
+# Outputs !CLKa !CLKb !CLRa !CLRb 
+#         !Exrom !RamWE !RomOE 
+.i 20
+.o 7
+.p 11
+----------10-------- 1~~~~~~
+---------010---0---- ~1~~~~~
+--------0----------- ~~1~~~~
+------1------------- ~~1~~~~
+--------------0----- ~~~1~~~
+----1--------------- ~~~1~~~
+------------1------- ~~~~1~~
+----------10-------- ~~~~~1~
+------------1----0-- ~~~~~~1
+---------0-1-------- ~~~~~~1
+----------------0--- ~~~~~~1
+.end

@@ -1,0 +1,45 @@
+Name SnapShot;
+Partno 01;
+Revision 01;
+Date 11/13/2019;
+Designer None;
+Company None;
+Location None;
+Assembly None;
+Device G16V8;
+/** Inputs **/
+Pin 1 = Delay;
+Pin 2 = Phi2;
+Pin 3 = Game;
+Pin 4 = RamEn;
+Pin 5 = Reset;
+Pin 6 = RomH;
+Pin 7 = RomL;
+Pin 8 = IOe;
+Pin 9 = RW;
+Pin 10 = GND;
+Pin 11 = RomEn;
+Pin 18 = FreezeKey;
+Pin 20 = VCC;
+/** Outputs **/
+Pin 12 = CLKa;
+Pin 13 = RomOE;
+Pin 14 = Exrom;
+Pin 15 = CLKb;
+Pin 16 = CLRa;
+Pin 17 = RamWE;
+Pin 19 = CLRb;
+
+
+/*
+* Logic: examples of simple gates expressed in CUPL
+*/
+/** # = OR **/
+/** & = AND **/
+!CLRb = !Reset # Delay;
+!RamWE = Phi2 & !RW;
+!CLRa = !Game # FreezeKey;
+!CLKb = Phi2 & !IOe & !RW & !RomEn;
+!Exrom = RamEn;
+!RomOE = !IOe & RW # RamEn & !RomL # !RomH;
+!CLKa = Phi2 & !RW;

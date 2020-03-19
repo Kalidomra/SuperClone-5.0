@@ -1,0 +1,58 @@
+LISTING FOR LOGIC DESCRIPTION FILE: SNAPSHOT.pld                     Page 1
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Tue Mar 17 09:17:16 2020
+
+  1:Name SnapShot;
+  2:Partno 01;
+  3:Revision 01;
+  4:Date 11/13/2019;
+  5:Designer None;
+  6:Company None;
+  7:Location None;
+  8:Assembly None;
+  9:Device G16V8;
+ 10:/** Inputs **/
+ 11:Pin 1 = Delay;
+ 12:Pin 2 = Phi2;
+ 13:Pin 3 = Game;
+ 14:Pin 4 = RamEn;
+ 15:Pin 5 = Reset;
+ 16:Pin 6 = RomH;
+ 17:Pin 7 = RomL;
+ 18:Pin 8 = IOe;
+ 19:Pin 9 = RW;
+ 20:Pin 10 = GND;
+ 21:Pin 11 = RomEn;
+ 22:Pin 18 = FreezeKey;
+ 23:Pin 20 = VCC;
+ 24:/** Outputs **/
+ 25:Pin 12 = CLKa;
+ 26:Pin 13 = RomOE;
+ 27:Pin 14 = Exrom;
+ 28:Pin 15 = CLKb;
+ 29:Pin 16 = CLRa;
+ 30:Pin 17 = RamWE;
+ 31:Pin 19 = CLRb;
+ 32:
+ 33:
+ 34:/*
+ 35:* Logic: examples of simple gates expressed in CUPL
+ 36:*/
+ 37:/** # = OR **/
+ 38:/** & = AND **/
+ 39:!CLRb = !Reset # Delay;
+ 40:!RamWE = Phi2 & !RW;
+ 41:!CLRa = !Game # FreezeKey;
+ 42:!CLKb = Phi2 & !IOe & !RW & !RomEn;
+ 43:!Exrom = RamEn;
+ 44:!RomOE = !IOe & RW # RamEn & !RomL # !RomH;
+ 45:!CLKa = Phi2 & !RW;
+ 46:
+
+
+
+Jedec Fuse Checksum       (3304)
+Jedec Transmit Checksum   (c174)

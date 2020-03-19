@@ -1,0 +1,53 @@
+%SIGNAL
+PIN  12 =  CLKa 
+PIN  15 =  CLKb 
+PIN  16 =  CLRa 
+PIN  19 =  CLRb 
+PIN   1 =  Delay 
+PIN  14 =  Exrom 
+PIN  18 =  FreezeKey 
+PIN  10 =  GND 
+PIN   3 =  Game 
+PIN   8 =  IOe 
+PIN   2 =  Phi2 
+PIN   9 =  RW 
+PIN   4 =  RamEn 
+PIN  17 =  RamWE 
+PIN   5 =  Reset 
+PIN  11 =  RomEn 
+PIN   6 =  RomH 
+PIN   7 =  RomL 
+PIN  13 =  RomOE 
+PIN  20 =  VCC 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+!CLKa =>
+    Phi2 & !RW
+
+!CLKb =>
+    !IOe & Phi2 & !RW & !RomEn
+
+!CLRa =>
+    !Game
+  # FreezeKey
+
+!CLRb =>
+    !Reset
+  # Delay
+
+!Exrom =>
+    RamEn
+
+!RamWE =>
+    Phi2 & !RW
+
+!RomOE =>
+    RamEn & !RomL
+  # !IOe & RW
+  # !RomH
+
+%END
