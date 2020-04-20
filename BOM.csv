@@ -5,8 +5,7 @@ On HM62256 - Pin 26 is A13
                            Pin 1 is A14
 Need to modify J1 to use HM62256.",1450-1033-ND (32K) OR 1450-1036-ND (8K)
 U2,27512 EPROM  (Used 32pin Socket),"Used 32 pin socket to enable future 128K upgrade
-27C512 (64k) or 27C010 (128k)
-AT27C512R-70PU ==> Is One Time Programmable",AT27C512R-70PU
+27C512 (64k) or 27C010 (128k) - W27C512-45Z (Ebay)",
 U3,16L8 PAL,Use  ATF16V8B-15PU as substitute.,ATF16V8B-15PU-ND
 U4,74LS174,,296-3664-5-ND
 U5,74LS174,,296-3664-5-ND
