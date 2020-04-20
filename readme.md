@@ -5,6 +5,7 @@ This is a clone of the Super Snapshot v5 hardware. All of the traces are close t
 The following parts will need to programmed:
 
 ATF16V8B-15PU --> This needs to be programmed with the include .jed file.
+
 W27C512-45Z --> Programmed with any available Super Snapshot v5 ROM. See: https://rr.pokefinder.org/wiki/Super_Snapshot
 
 I have also included a 3d printable case.
