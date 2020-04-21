@@ -1,6 +1,6 @@
 SuperClone 5.0
 
-![](https://raw.githubusercontent.com/Kalidomra/SuperClone-5.0/Finished%20Board.jpg)
+![](Finished%20Board.jpg)
 
 This is a clone of the Super Snapshot v5 hardware. All of the traces are close to the original and it will fit in the same case as an original. It uses an Atmel ATF16V8B in the place of the original PAL. I have also tried a ATF16V8C, but it did not work. All of the parts, including the Atmel are interchangeable with an original. I have also included the WinCUPL source files and a DigiKey bill of materials. The EEPROM is not available at DigiKey. I bought one from Ebay. 
 
