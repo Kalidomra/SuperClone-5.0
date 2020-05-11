@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name SuperClone)(type Legacy)(uri ${KIPRJMOD}/SuperClone.lib)(options "")(descr ""))
+)

@@ -1,0 +1,9 @@
+(module 0.100Hole (layer F.Cu) (tedit 5DCD84B3)
+  (fp_text reference REF** (at 0.762 2.286 unlocked) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value 0.100Hole (at 0 -2.2225) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "" np_thru_hole circle (at 0 0) (size 2.54 2.54) (drill 2.54) (layers *.Cu *.Mask))
+)
