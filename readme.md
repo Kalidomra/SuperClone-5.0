@@ -11,7 +11,7 @@ ATF16V8B-15PU --> This needs to be programmed with the include .jed file.
 W27C512-45Z --> Programmed with any available Super Snapshot v5 ROM. See: https://rr.pokefinder.org/wiki/Super_Snapshot
 
 
-I have also included a 3d printable case.
+I have also included a 3d printable case. However, Hackup has made great case available here: https://www.thingiverse.com/thing:4623905
 
 Note on using EPROMS: Some of the cheap, clone, UV erasable 27C512 EPROMS I tried did not work. There is something about the clone EPROMS that messes up the timings.
 
