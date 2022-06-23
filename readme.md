@@ -13,5 +13,6 @@ W27C512-45Z --> Programmed with any available Super Snapshot v5 ROM. See: https:
 
 I have also included a 3d printable case. However, Hackup has made great case available here: https://www.thingiverse.com/thing:4623905
 
-Note on using EPROMS: Some of the cheap, clone, UV erasable 27C512 EPROMS I tried did not work. There is something about the clone EPROMS that messes up the timings.
+Some of the cheap, clone, UV erasable 27C512 EPROMS I tried did not work. There is something about the clone EPROMS that messes up the timings.
 
+The original PCB was setup for 8K Ram, the clone is also defaulted this way. In order to use the 32K ram you need to cut the trace betrween pin 1 and 2 on J1 and then jumper pin 2 and 3 on J1.
